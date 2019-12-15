@@ -39,12 +39,10 @@ interace Person {
   lastName: string;
   photoURL: string;
   description: string;
-  social: {
-    twitterURL: string;
-    linkedinURL: string;
-    instagramURL: string;
-    facebookURL: string;
-  };
+  twitterURL: string;
+  linkedinURL: string;
+  instagramURL: string;
+  facebookURL: string;
 }
 ```
 
