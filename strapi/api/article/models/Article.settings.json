@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "subhead": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "publicationDate": {
+      "type": "date"
+    },
+    "author": {
+      "model": "person"
+    },
+    "SEOTitle": {
+      "type": "string"
+    },
+    "SEODescription": {
+      "type": "text"
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
+    }
+  }
+}

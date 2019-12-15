@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "advertisements",
+  "info": {
+    "name": "advertisement",
+    "description": "This is an ad place anywhere on the website, paid for by supporters of The Stand and local businesses."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "photoURL": {
+      "type": "string"
+    },
+    "websiteURL": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    }
+  }
+}
