@@ -1,7 +1,11 @@
-import React from "react"
+import React from 'react';
 
-export default () => (
-  <Layout>
-    <h1>Logo component. Import to pages that require it. </h1>
-  </Layout>
-)
+class Logo extends React.Component{
+  render() { 
+    return (
+    <div>This is the logo.</div>
+    )
+  }
+}
+
+export default Logo;
