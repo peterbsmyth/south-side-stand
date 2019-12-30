@@ -1,10 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
+import React from "react";
+import { Link } from "gatsby";
+import '../styles/global.css';
+import Layout from '../components/layout';
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-import '../styles/global.css'
+class Index extends React.Component{
+  render() { 
+    return (
 
-export default () => (
+// export default () => (
   <div style={{ color: `purple` }}>
     <li><Link to="/index/">Home</Link></li>
     <li><Link to="/aboutstaff/">About Staff</Link></li>
@@ -21,4 +27,9 @@ export default () => (
     <Header headerText="Hello Gatsby!" />
     <p>What a world.</p>
     <img src="https://source.unsplash.com/random/400x200" alt="" />
-  </div>)
+  </div>
+   )
+  }
+}
+
+export default Index;
