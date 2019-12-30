@@ -1,7 +1,11 @@
-import React from "react"
+import React from 'react';
 
-export default () => (
-  <Navigation>
-    <h1>Navigation component. Import to pages that require it. </h1>
-  </Navigation>
-)
+class Navigation extends React.Component{
+  render() { 
+    return (
+    <div></div>
+    )
+  }
+}
+
+export default Navigation;
