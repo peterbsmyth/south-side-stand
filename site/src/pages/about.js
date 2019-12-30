@@ -1,9 +1,18 @@
-import React from "react"
-import Header from "../components/header"
+import React from 'react';
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-export default () => (
-  <div style={{ color: `teal` }}>
-    <Header />
+class About extends React.Component{
+  render() { 
+    return (
+    <div>
+      <Navigation />
+      <Header />
+      <Footer />
+    </div>
+    )
+  }
+}
 
-  </div>
-)
+export default About;
