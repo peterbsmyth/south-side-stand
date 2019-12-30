@@ -1,7 +1,11 @@
-import React from "react"
+import React from 'react';
 
-export default () => (
-  <Layout>
-    <h1>Footer component.  Import to pages that require it. </h1>
-  </Layout>
-)
+class Footer extends React.Component{
+  render() { 
+    return (
+    <div></div>
+    )
+  }
+}
+
+export default Footer;
