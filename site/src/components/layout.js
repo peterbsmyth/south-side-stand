@@ -1,7 +1,13 @@
-import React from "react"
-export default ({ children }) => (
-  <div style={{ margin: `10 auto`, maxWidth: 1000 }}>
-    {children}
-    
-  </div>
-)
+import React from 'react'
+import Navigation from './Navigation'
+import './layout.css'
+const layout = ({ children }) => {
+  return (
+    <>
+      <Navigation />
+      <main>{children}</main>
+    </>
+  )
+}
+
+export default layout

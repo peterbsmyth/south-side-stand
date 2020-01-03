@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import '../styles/global.css'
 import Logo from '../components/logo'
 import Navigation from '../components/Navigation'
-import Header from '../components/Header'
+import Header from '../components/header'
 import Footer from '../components/Footer'
 
-class Index extends React.Component{
+class index extends React.Component{
   render() { 
     return (
 
@@ -28,4 +28,4 @@ class Index extends React.Component{
   }
 }
 
-export default Index;
+export default index;
