@@ -4,8 +4,7 @@ export default () => (
   <Layout>
     <h1>This is the about staff page</h1>
 
-    <!doctype html>
-<html lang="en">
+  
     <head>
         
         <!-- Required meta tags -->
