@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Navigation from '../components/navigation';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Card from '../components/card';
 
 
 class Fatherhood extends React.Component {
