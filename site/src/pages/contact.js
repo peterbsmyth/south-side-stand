@@ -12,23 +12,6 @@ class Contact extends React.Component {
       <div>
         <Layout />
         <Navigation />
-        <html lang="en">
-          <head>
-
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-            <title>Contact Us</title>
-
-
-            <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-            <link rel="stylesheet" href="css/general.css" type="text/css" />
-            <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One|Oswald|Roboto:700&display=swap" rel="stylesheet" />
-
-          </head>
-
-          <body>
 
             <div class="container">
 
@@ -120,8 +103,6 @@ class Contact extends React.Component {
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/form-validation.js"></script>
-          </body>
-        </html>
 
       </div>
     )
