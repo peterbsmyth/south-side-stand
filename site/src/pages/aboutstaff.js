@@ -7,28 +7,6 @@ export default () => (
     <Layout>
         <h1>This is the about staff page</h1>
 
-
-        <head>
-
-
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-            <title>About</title>
-
-
-            <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-
-            <link rel="stylesheet" href="css/general.css" type="text/css" />
-            <link rel="stylesheet" href="css/About:Staff.css" type="text/css" />
-            <link rel="stylesheet" href="js/general.js" type="text/js" />
-            <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One|Oswald|Roboto:700&display=swap" rel="stylesheet" />
-
-
-        </head>
-
-        <body>
             <div class="container">
 
                 <Header />
@@ -234,7 +212,6 @@ export default () => (
                 <script src="js/bootstrap.min.js"></script>
                 <script src="js/general.js"></script>
             </div>
-        </body>
 
     </Layout>
 )
