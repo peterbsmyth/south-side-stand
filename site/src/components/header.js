@@ -1,4 +1,6 @@
 import React from 'react';
+import standLogo from '../images/header_footer/the-stand-logo-full-blue.png';
+import iconfinder from '../images/header_footer/iconfinder_search.png';
 
 class Header extends React.Component {
   render() {
@@ -6,7 +8,7 @@ class Header extends React.Component {
       <header class="row py-4">
 
         <div class="col-3">
-          <img src="images/header_footer/the-stand-logo-full-blue.png" alt="the stand logo" width="200" />
+          <img src={standLogo} alt="the stand logo" width="200" />
         </div>
 
         <div class="col-6">
@@ -21,7 +23,7 @@ class Header extends React.Component {
                 <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" />
 
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon2"><img src="images/header_footer/iconfinder_search.png" alt="the search logo" width="24" /></span>
+                  <span class="input-group-text" id="basic-addon2"><img src={iconfinder} alt="the search logo" width="24" /></span>
                 </div>
 
               </div>
