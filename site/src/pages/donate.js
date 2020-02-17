@@ -3,8 +3,7 @@ import Layout from '../components/layout'
 import Footer from '../components/footer'
 export default () => (
   <Layout>
-    <h1>this is our about contact page</h1>
- 
+    <h1>this is our donate page</h1>
     <Footer />
   </Layout>
 )

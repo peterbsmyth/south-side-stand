@@ -1,53 +1,12 @@
-import React, { Component } from 'react';
-// import logo from '../images/header_footer/the-stand-logo.png';
-// import '../styles/general.css';
+import React from 'react'
+import Layout from '../components/layout'
+import Footer from '../components/footer'
 
-class Aboutstaff extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header" />
+export default () => (
+  <div>
+      <Layout />
 
-          <div className="container">
   
-    <header className="row py-4">
-    
-      <div className="col-3">
-        <img src="images/header_footer/the-stand-logo-full-blue.png" alt="the stand logo" width="200" />
-      </div>
-    
-      <div className="col-6">
-      </div>
-  
-      <div className="col-3">
-        
-        <div className="row">
-          <div className="col px-0">
-            
-            <div className="input-group input-group-sm mb-3">
-              <input type="text" className="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" />
-        
-              <div className="input-group-prepend">
-                 <span className="input-group-text" id="basic-addon2"><img src="images/header_footer/iconfinder_search.png" alt="the search logo" width="24" /></span>
-              </div>
-            
-            </div>
-
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col text-right px-0">
-            <button type="button" className="btn btn-primary btn-md px-3 px-md-5">Donate</button>
-          </div>
-        </div>
-
-
-      </div>
- 
-     </header>
-
-
 <div className="row">
   <div className="col px-0">
 
@@ -179,9 +138,7 @@ class Aboutstaff extends Component {
         <div className="input-group-prepend" />
           <span className="input-group-text" id="basic-addon2">Submit</span>
         </div>
-     
-      
-      </div>
+        
 
       <ul className="list-inline">
 
@@ -218,13 +175,5 @@ class Aboutstaff extends Component {
           
       <a target="new" href="INSERT STAND INSTAGRAM LINK" ><img src="images/header_footer/iconfinder_instagram.png" alt="Instagram Logo" width="36" className="mx-1" /></a>
     </div>
-
-
-  
-</div>
-  
-    );
-  }
-}
-
-export default Aboutstaff; 
+    </div>
+  )

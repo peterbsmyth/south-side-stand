@@ -1,45 +1,37 @@
 import React from 'react'
 import { Link } from 'gatsby'
-const Navigation = () => {
+const Navbar = () => {
   return (
     <nav>
       <ul>
+        
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/stories/">Stories</Link>
         </li>
         <li>
-          <Link to="/blog/">About Staff</Link>
+          <Link to="/aboutstaff/">About</Link>
         </li>
         <li>
-          <Link to="/products/">Ads</Link>
+          <Link to="/opportunities/">Opportunities</Link>
         </li>
         <li>
-          <Link to="/products/">Articles</Link>
+          <Link to="/fatherhood/">Fatherhood</Link>
         </li>
         <li>
-          <Link to="/products/">Calendar</Link>
+          <Link to="/calendar/">Calendar</Link>
         </li>
         <li>
-          <Link to="/products/">Donations</Link>
+          <Link to="/contact/">Contact</Link>
         </li>
         <li>
-          <Link to="/products/">Get Involved</Link>
+          <Link to="/getinvolved/">Get Involved</Link>
         </li>
         <li>
-          <Link to="/products/">Products</Link>
-        </li>
-        <li>
-          <Link to="/products/">Opportunites</Link>
-        </li>
-        <li>
-          <Link to="/products/">Print Locations</Link>
-        </li>
-        <li>
-          <Link to="/products/">Fatherhood</Link>
+          <Link to="/donate">Donate</Link>
         </li>
       </ul>
     </nav>
   )
 }
 
-export default Navigation
+export default Navbar
