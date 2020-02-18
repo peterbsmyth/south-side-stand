@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { useStaticQuery, graphql } from "gatsby"
 export default () => {
     return (
         <Layout>
