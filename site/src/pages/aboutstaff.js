@@ -42,6 +42,70 @@ export default () => {
           }
         }
       }
+    reginaldSeigler: file(relativePath: {eq: "about_staff/ReginaldA.Seigler.jpg"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    daleHarp: file(relativePath: {eq: "about_staff/DaleHarp.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    brendaMuhammad: file(relativePath: {eq: "about_staff/BrendaBillinsMuhammad.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    keithMuhammad: file(relativePath: {eq: "about_staff/KeithMuhammad.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    katherineHills: file(relativePath: {eq: "about_staff/KatherineHills.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    gloryThomas: file(relativePath: {eq: "about_staff/GloryThomas.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    miguelBalbuena: file(relativePath: {eq: "about_staff/MiguelBalbuena.png"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    jeremiahHowell: file(relativePath: {eq: "about_staff/JeremiahHowell.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
       
   }  
   `)
@@ -156,7 +220,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/ReginaldA.Seigler.jpg" alt="Reginald A. Seigler Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.reginaldSeigler.childImageSharp.fluid}
+                                        alt="Reginald A. Seigler Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    />
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Reginald A. Seigler</span></p>
@@ -167,8 +235,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/DaleHarp.png" alt="Dale Harp Image" class="img-fluid simg mb-3 mt-3" />
-                                </div>
+                                <Img
+                                        fluid={data.daleHarp.childImageSharp.fluid}
+                                        alt="Dale Harp Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    />                                </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Dale Harp</span></p>
                                     <p>Dale joined The Stand as a board member this past month but has been connected with the publication since 2013. He was first featured in The Stand’s pages for being a local, published author of “The Day My Dawgs Ran,” a book he wrote while incarcerated<span id="dots6">...</span><span id="more6">. He wanted to share his personal stories about going down the wrong path as a way to encourage youth to make better choices. He next participated in The Stand’s recent summer long storytelling series From Where We Stand. Now he is eager to be further involved as a board member. Harp is also a volunteer at the Mary Nelson Youth Center, Faith Hope Community Center and member of Citizen Action of NY.</span></p><button onclick="myFunction6()" id="myBtn6" class="mb-3">Read more</button>
@@ -187,8 +258,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/BrendaBillinsMuhammad.png" alt="Reginald A. Seigler Image" class="img-fluid simg mb-3 mt-3" />
-                                </div>
+                                <Img
+                                        fluid={data.brendaMuhammad.childImageSharp.fluid}
+                                        alt="Brenda Billins Muhammad Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    />                                </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Brenda Billins Muhammad</span></p>
                                     <p>Brenda is a consummate community volunteer seeking to serve the community as a true community conduit. She is dedicated not only to our community, but to our country as well. She has earned two President’s Volunteer Service Awards and a Certificate of<span id="dots7">...</span><span id="more7"> National Service. Brenda is currently serving a second term of National Service as an AmeriCorps VISTA (Volunteers in Service to America) with Syracuse Habitat for Humanity. Brenda is a graduate of Onondaga Community College and SUNY Institute of Technology. Brenda has excellent professional and educational experience in the areas of volunteer management, community organizing, non-profit management, disaster preparedness, business administration, homeownership education, foreclosure intervention and default counseling. She has recently acquired certificates from the Citizen’s Academy, NeighborWorks America Training Institute, FEMA and the Black History Preservation Project. Her plan of action is to attend town hall meetings, community events, workshops and share reports of the knowledge and resources that she secures with our readers. Brenda’s knowledge of our community and her varied experience will be a welcomed addition to The Stand.</span></p><button onclick="myFunction7()" id="myBtn7" class="mb-3">Read more</button>
@@ -198,7 +272,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/KeithMuhammad.png" alt="Dale Harp Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.keithMuhammad.childImageSharp.fluid}
+                                        alt="Dale Harp Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    /> 
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Keith Muhammad</span></p>
@@ -212,7 +290,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/KatherineHills.png" alt="Reginald A. Seigler Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.katherineHills.childImageSharp.fluid}
+                                        alt="Katherine Hills Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    /> 
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Katherine Hills</span></p>
@@ -223,7 +305,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/GloryThomas.png" alt="Dale Harp Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.gloryThomas.childImageSharp.fluid}
+                                        alt="Glory Thomas Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    /> 
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Glory Thomas</span></p>
@@ -237,7 +323,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/MiguelBalbuena.png" alt="Reginald A. Seigler Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.miguelBalbuena.childImageSharp.fluid}
+                                        alt="Miguel Balbuena Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    /> 
                                 </div>
                                 <div class="col-md-9 mt-3">
                                     <p><span class="name">Miguel Balbuena</span></p>
@@ -248,7 +338,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/JeremiahHowell.jpg" alt="Dale Harp Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.jeremiahHowell.childImageSharp.fluid}
+                                        alt="Jeremiah Howell Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    />
                                 </div>
                                 <div class="col-md-9 mt-3">
                                     <p><span class="name">Jeremiah Howell</span></p>
