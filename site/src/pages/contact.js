@@ -4,6 +4,7 @@ import Navigation from '../components/navigation';
 import Header from '../components/header';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import brownHouse from '../images/contact/building.jpg';
 
 
 class Contact extends React.Component {
@@ -30,7 +31,7 @@ class Contact extends React.Component {
                 <h1 class="h1-zimeng mb-3">Contact Us</h1>
                 <div class="row py-3">
                   <div class="col-6">
-                    <img src="images/contact/building.jpg" alt="brown house" class="img-fluid" />
+                    <img src={brownHouse} alt="brown house" class="img-fluid" />
                   </div>
                   <div class="col-md-6">
                     <h4>Mailing Address</h4>
