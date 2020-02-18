@@ -3,7 +3,9 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import Header from "../components/header"
 import Footer from "../components/footer"
-export default () => (
+export default () => {
+    
+} (
     <Layout>
         <h1>This is the about staff page</h1>
 
