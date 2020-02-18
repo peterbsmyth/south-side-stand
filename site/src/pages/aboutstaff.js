@@ -34,6 +34,14 @@ export default () => {
           }
         }
       }
+      shanteashiaHarris: file(relativePath: {eq: "about_staff/ShanteashiaHarrisEl.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       
   }  
   `)
@@ -130,7 +138,11 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                    <img src="images/about_staff/ShanteashiaHarrisEl.jpg" alt="Shanteashia Harris-El Image" class="img-fluid simg mb-3 mt-3" />
+                                    <Img
+                                        fluid={data.shanteashiaHarris.childImageSharp.fluid}
+                                        alt="Shanteashia Harris-El Image"
+                                        className="img-fluid simg mb-3 mt-3"
+                                    />   
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Shanteashia Harris-El</span></p>
