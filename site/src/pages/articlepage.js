@@ -25,6 +25,38 @@ export default () => {
         }
       }
     }
+    plantingTree: file(relativePath: {eq: "article/grieve3.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    peopleDancing: file(relativePath: {eq: "article/more1.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cuttingRibbon: file(relativePath: {eq: "article/more2.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    framedTranscript: file(relativePath: {eq: "article/more3.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }  
   `)
 
@@ -94,7 +126,11 @@ export default () => {
 
               </div>
               <div class="col-md-7">
-                <img src="images/article/grieve3.JPEG" alt="people planting a tree" class="img-fluid" />
+                <Img
+                  fluid={data.plantingTree.childImageSharp.fluid}
+                  alt="people planting a tree"
+                  className="img-fluid"
+                />
                 <p>A tree is planed in memory of Antonio “Tone” Gullotto. | Alex Rouhandeh, The Stand Intern</p>
               </div>
             </div>
@@ -129,15 +165,27 @@ export default () => {
             <div class="row pt-2 pb-4">
 
               <div class="col-md-4">
-                <img src="images/article/more1.JPEG" alt="people dancing" class="img-fluid" />
+                <Img
+                  fluid={data.peopleDancing.childImageSharp.fluid}
+                  alt="people dancing"
+                  className="img-fluid"
+                />
                 <p class="calendar-listing">Kurtis Blow puts his spin on classic to create ‘Hip Hop Nutcracker’</p>
               </div>
               <div class="col-md-4">
-                <img src="images/article/more2.JPEG" alt="people cutting a ribbon" class="img-fluid" />
+                <Img
+                  fluid={data.cuttingRibbon.childImageSharp.fluid}
+                  alt="people cutting a ribbon"
+                  className="img-fluid"
+                />
                 <p class="calendar-listing">Grand Opening of Freedom Commons</p>
               </div>
               <div class="col-md-4">
-                <img src="images/article/more3.JPEG" alt="framed transcript" class="img-fluid" />
+                <Img
+                  fluid={data.framedTranscript.childImageSharp.fluid}
+                  alt="framed transcript"
+                  className="img-fluid"
+                />
                 <p class="calendar-listing">Injustice Corrected</p>
               </div>
 
