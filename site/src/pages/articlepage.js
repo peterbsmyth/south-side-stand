@@ -3,9 +3,26 @@ import Layout from '../components/layout';
 import Header from '../components/header';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-export default () => (
-  <Layout>
-    <h1>This is the article page.</h1>
+import { useStaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
+
+export default () => {
+  const data = useStaticQuery(graphql`
+  query ArticlePage {
+    groupPhoto: file(relativePath: {eq: "article/grieve.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }  
+  `)
+
+  return (
+    <Layout>
+      <h1>This is the article page.</h1>
 
       <div class="container">
 
@@ -24,7 +41,11 @@ export default () => (
         <div class="row py-3">
           <section class="col-md-9">
             <h4 class="pb-2">A Better Way to Grieve</h4>
-            <img src="images/article/grieve.JPEG" alt="group photo" class="img-fluid" />
+            <Img
+              fluid={data.groupPhoto.childImageSharp.fluid}
+              alt="group photo"
+              className="img-fluid"
+            />
             <p class="location">iApologize’s first Park & John Street Memorial Cookout took place Sep. 21. The nonprofit’s founder plans to make it an annual event. | Sheila Quinell, Staff Photographer</p>
             <h5>How Rashawn Sullivan Plans to Turn a Place of Grief Into a Memorial Garden</h5>
             <p>For some time, the intersection of Park and John streets on Syracuse’s North Side was a symbol of the neighborhood’s misery. At this intersection once stood a two-story home that had long been abandoned and vandalized. Empty and decaying, the house was littered with hundreds of empty liquor bottles. Tattooed in spray paint across its walls read “rest in peace.” In a way, the house stood as a memorial to those lost at this intersection. In another, it was a reminder of the merciless killings that continue to plague this city. And while the house has been demolished, its empty lot remains like a fading scar reminiscent of all the tears shed on these streets.</p>
@@ -138,5 +159,6 @@ export default () => (
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="js/bootstrap.min.js"></script>
-  </Layout>
-)
+    </Layout>
+  )
+}  
