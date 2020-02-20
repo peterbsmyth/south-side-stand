@@ -17,6 +17,14 @@ export default () => {
         }
       }
     }
+    familyPhoto: file(relativePath: {eq: "article/grieve2.JPEG"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }  
   `)
 
@@ -56,7 +64,11 @@ export default () => {
 
             <div class="row">
               <div class="col-md-8">
-                <img src="images/article/grieve2.JPEG" alt="family photo" class="img-fluid" />
+                <Img
+                  fluid={data.familyPhoto.childImageSharp.fluid}
+                  alt="family photo"
+                  className="img-fluid"
+                />
                 <p>The family of James Springer III poses for a photo with Rashawn Sullivan during the cookout organized Sep. 21. | Sheila Quinell, Staff Photographer</p>
 
               </div>
