@@ -62,7 +62,6 @@ export default () => {
 
   return (
     <Layout>
-      <h1>This is the article page.</h1>
 
       <div class="container">
 
