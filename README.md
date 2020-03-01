@@ -38,6 +38,7 @@ interace Person {
   firstName: string;
   lastName: string;
   photoURL: string;
+  title: string;
   description: string;
   twitterURL: string;
   linkedinURL: string;
