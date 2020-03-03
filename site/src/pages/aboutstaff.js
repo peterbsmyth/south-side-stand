@@ -150,12 +150,12 @@ export default () => {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row staffcontent">
-                                <StaffCard 
-                                name="Steve Davis"
-                                position="Creator"
-                                information="Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to"
-                                more="joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977."
-                                image={data.steveDavis.childImageSharp.fluid}
+                                <StaffCard
+                                    name="Steve Davis"
+                                    position="Creator"
+                                    information="Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to"
+                                    more="joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977."
+                                    image={data.steveDavis.childImageSharp.fluid}
                                 />
                                 <div class="col-md-3">
                                     <Img
@@ -214,7 +214,7 @@ export default () => {
                                         fluid={data.shanteashiaHarris.childImageSharp.fluid}
                                         alt="Shanteashia Harris-El Image"
                                         className="img-fluid simg mb-3 mt-3"
-                                    />   
+                                    />
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Shanteashia Harris-El</span></p>
@@ -243,7 +243,7 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                <Img
+                                    <Img
                                         fluid={data.daleHarp.childImageSharp.fluid}
                                         alt="Dale Harp Image"
                                         className="img-fluid simg mb-3 mt-3"
@@ -266,7 +266,7 @@ export default () => {
                         <div class="col-md-6">
                             <div class="row staffcontent">
                                 <div class="col-md-3">
-                                <Img
+                                    <Img
                                         fluid={data.brendaMuhammad.childImageSharp.fluid}
                                         alt="Brenda Billins Muhammad Image"
                                         className="img-fluid simg mb-3 mt-3"
@@ -284,7 +284,7 @@ export default () => {
                                         fluid={data.keithMuhammad.childImageSharp.fluid}
                                         alt="Dale Harp Image"
                                         className="img-fluid simg mb-3 mt-3"
-                                    /> 
+                                    />
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Keith Muhammad</span></p>
@@ -302,7 +302,7 @@ export default () => {
                                         fluid={data.katherineHills.childImageSharp.fluid}
                                         alt="Katherine Hills Image"
                                         className="img-fluid simg mb-3 mt-3"
-                                    /> 
+                                    />
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Katherine Hills</span></p>
@@ -317,7 +317,7 @@ export default () => {
                                         fluid={data.gloryThomas.childImageSharp.fluid}
                                         alt="Glory Thomas Image"
                                         className="img-fluid simg mb-3 mt-3"
-                                    /> 
+                                    />
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Glory Thomas</span></p>
@@ -335,7 +335,7 @@ export default () => {
                                         fluid={data.miguelBalbuena.childImageSharp.fluid}
                                         alt="Miguel Balbuena Image"
                                         className="img-fluid simg mb-3 mt-3"
-                                    /> 
+                                    />
                                 </div>
                                 <div class="col-md-9 mt-3">
                                     <p><span class="name">Miguel Balbuena</span></p>
