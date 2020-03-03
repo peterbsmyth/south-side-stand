@@ -5,6 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
+import StaffCard from '../components/staffcard'
 
 
 export default () => {
@@ -149,6 +150,13 @@ export default () => {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row staffcontent">
+                                <StaffCard 
+                                name="Steve Davis"
+                                position="Creator"
+                                information="Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to"
+                                more="joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977."
+                                image={data.steveDavis.childImageSharp.fluid}
+                                />
                                 <div class="col-md-3">
                                     <Img
                                         fluid={data.steveDavis.childImageSharp.fluid}
@@ -158,7 +166,7 @@ export default () => {
                                 </div>
                                 <div class="col-md-9 stf-text mt-3">
                                     <p><span class="name">Steve Davis</span><br /><span class="position">Creator</span></p>
-                                    <p>Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to<span id="dots1">...</span><span id="more1"> joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977.</span></p><button onclick="myFunction1()" id="myBtn1" class="mb-3">Read more</button>
+                                    <p class="staff-information">Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to<span id="dots1">...</span><span id="more1"> joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977.</span></p><button onclick="myFunction1()" id="myBtn1" class="mb-3 button">Read more</button>
                                 </div>
                             </div>
                         </div>
