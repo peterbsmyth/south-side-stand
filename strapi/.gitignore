@@ -95,6 +95,9 @@ results
 node_modules
 .node_history
 
+# It's recommended to exclude package-lock.json on Heroku
+package-lock.json
+
 
 ############################
 # Tests
