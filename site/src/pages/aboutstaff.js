@@ -110,6 +110,29 @@ export default () => {
       
   }  
   `)
+
+
+    const staff = [{
+        name: "Steve Davis",
+        position: "Creator",
+        information: "Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to",
+        more: "joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977.",
+        image: data.steveDavis.childImageSharp.fluid
+    }, {
+        name: "Ashley Kang",
+        position: "Director",
+        information: "Ashley first arrived in Syracuse in 2000 to study journalism at the S.I. Newhouse School of Public Communications. While at the university, she wrote for several student-run publications and served",
+        more: "as editor of the university’s only magazine devoted to diversity, 360 Degrees. Upon graduation, she took a full-time position with The Citizen, the daily newspaper based in Auburn, NY. As the paper’s features editor, she worked not only with staff writers but community members to provide local coverage of Cayuga County.She took over as director of The Stand in May of 2009 and quickly began collecting sources and contacts in the community. She is the main point person for interested contributors and works to coordinate all content seen on the website and in print. She hopes to find many from the community who are interested in contributing to the project and is impressed with the number of community residents who have shown interest so far. She graduated from SU in 2004 with a magazine journalism degree and obtained a master’s degree in higher education from SU’s School of Education in 2011.",
+        image: data.ashleyKang.childImageSharp.fluid
+    }];
+
+    const boardOfDirectors = [
+
+    ];
+
+    const correspondents = [
+
+    ];
     return (
         <Layout>
             <h1>This is the about staff page</h1>
@@ -150,24 +173,16 @@ export default () => {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row staffcontent">
-                                <StaffCard
-                                    name="Steve Davis"
-                                    position="Creator"
-                                    information="Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to"
-                                    more="joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977."
-                                    image={data.steveDavis.childImageSharp.fluid}
-                                />
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.steveDavis.childImageSharp.fluid}
-                                        alt="Steve Davis Image"
-                                        className="img-fluid simg mb-3 mt-3"
+                                {staff.map(s => (
+                                    <StaffCard
+                                        key={s.name}
+                                        name={s.name}
+                                        position={s.position}
+                                        information={s.information}
+                                        more={s.more}
+                                        image={s.image}
                                     />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Steve Davis</span><br /><span class="position">Creator</span></p>
-                                    <p class="staff-information">Prof. Davis has worked in newsrooms of all kinds and all sizes, as a manager, editor, writer and page designer. He was executive editor at the community newspaper in Chambersburg, Pa., for six years prior to<span id="dots1">...</span><span id="more1"> joining the Newhouse faculty in 1999. Before that he was national editor and then Washington editor at USA Today, including one year as the lead editor directing the newspaper’s coverage of the Persian Gulf War. Within a year or two, he hopes to turn the project over to the community and work at the project as a volunteer. He graduated from the University of Missouri School of Journalism with a bachelor’s degree in 1977.</span></p><button onclick="myFunction1()" id="myBtn1" class="mb-3 button">Read more</button>
-                                </div>
+                                ))}
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -195,6 +210,16 @@ export default () => {
                     <div class="row mb-5">
                         <div class="col-md-6">
                             <div class="row staffcontent">
+                                {boardOfDirectors.map(s => (
+                                    <StaffCard
+                                        key={s.name}
+                                        name={s.name}
+                                        position={s.position}
+                                        information={s.information}
+                                        more={s.more}
+                                        image={s.image}
+                                    />
+                                ))}
                                 <div class="col-md-3">
                                     <Img
                                         fluid={data.charlesPierce.childImageSharp.fluid}
@@ -265,6 +290,16 @@ export default () => {
                     <div class="row mb-5">
                         <div class="col-md-6">
                             <div class="row staffcontent">
+                                {correspondents.map(s => (
+                                    <StaffCard
+                                        key={s.name}
+                                        name={s.name}
+                                        position={s.position}
+                                        information={s.information}
+                                        more={s.more}
+                                        image={s.image}
+                                    />
+                                ))}
                                 <div class="col-md-3">
                                     <Img
                                         fluid={data.brendaMuhammad.childImageSharp.fluid}
