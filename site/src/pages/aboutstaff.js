@@ -137,20 +137,48 @@ export default () => {
         more: "at Moorish Science Temple of America and in the past, with the Big Brother Big Sister program. She loves traveling and religion. She would like to see articles of religious, political, cultural, food (recipes) and health content featured in The Stand.",
         image: data.shanteashiaHarris.childImageSharp.fluid
     }, {
-        name: "Reginald A. Seigler",                                
+        name: "Reginald A. Seigler",
         information: "Reginald volunteers as the coordinator of Jubilee Homes Inc. Southwest Showcase Sundays by acting as a strong promoter to these community events held at the Spirit of Jubilee Park in the summer. He is an active member in the Tucker Missionary Baptist Church",
         more: ", contributes to The Post-Standard as a Newschaser and also serves as the bandleader for Soft Spoken Band. He is helping to launch an entertainment column, A Friendly Five, in The Stand that highlights the music and history of the local music scene. He also hopes to see The Stand become involved with South Side schools and be an outlet for the community to voice their concerns. In his free time, he enjoys recording and mixing audio, videography, photography and writing.",
         image: data.reginaldSeigler.childImageSharp.fluid
     }, {
         name: "Dale Harp",
         information: "Dale joined The Stand as a board member this past month but has been connected with the publication since 2013. He was first featured in The Stand’s pages for being a local, published author of “The Day My Dawgs Ran,” a book he wrote while incarcerated",
-        More: ". He wanted to share his personal stories about going down the wrong path as a way to encourage youth to make better choices. He next participated in The Stand’s recent summer long storytelling series From Where We Stand. Now he is eager to be further involved as a board member. Harp is also a volunteer at the Mary Nelson Youth Center, Faith Hope Community Center and member of Citizen Action of NY.",
+        more: ". He wanted to share his personal stories about going down the wrong path as a way to encourage youth to make better choices. He next participated in The Stand’s recent summer long storytelling series From Where We Stand. Now he is eager to be further involved as a board member. Harp is also a volunteer at the Mary Nelson Youth Center, Faith Hope Community Center and member of Citizen Action of NY.",
         image: data.daleHarp.childImageSharp.fluid
     }];
 
-    const correspondents = [
-
-    ];
+    const correspondents = [{
+        name: "Brenda Billins Muhammad",
+        information: "Brenda is a consummate community volunteer seeking to serve the community as a true community conduit. She is dedicated not only to our community, but to our country as well. She has earned two President’s Volunteer Service Awards and a Certificate of",
+        more: "National Service. Brenda is currently serving a second term of National Service as an AmeriCorps VISTA (Volunteers in Service to America) with Syracuse Habitat for Humanity. Brenda is a graduate of Onondaga Community College and SUNY Institute of Technology. Brenda has excellent professional and educational experience in the areas of volunteer management, community organizing, non-profit management, disaster preparedness, business administration, homeownership education, foreclosure intervention and default counseling. She has recently acquired certificates from the Citizen’s Academy, NeighborWorks America Training Institute, FEMA and the Black History Preservation Project. Her plan of action is to attend town hall meetings, community events, workshops and share reports of the knowledge and resources that she secures with our readers. Brenda’s knowledge of our community and her varied experience will be a welcomed addition to The Stand.",
+        image: data.brendaMuhammad.childImageSharp.fluid
+    }, {
+        name: "Keith Muhammad",
+        information: "Keith is a servant leader who has worked in the public and non-profit sectors for more than 25 years. He is moved by the pain and suffering of people and is committed to bringing about social change and equitable participation of the disenfranchised",
+        more: ". Keith is from a family of activists. His father, Laymon Herring, was the self-educated publisher of the Syracuse Banner and Syracuse Crusader newspapers. He desires to walk in his father’s shoes by writing articles that speak truth to power, that address the needs of the people, that are thought provoking and entertaining. He became involved with the South Side Newspaper Project to improve his writing and to contribute. He has written a few small articles. His work has appeared in The Syracuse Banner, Health Care Cost and The Final Call.",
+        image: data.keithMuhammad.childImageSharp.fluid
+    }, {
+        name: "Katherine Hills",
+        information: "Katherine is a graduate of St. John Fisher College with a degree in Communication/Journalism. She currently works for News Channel 9, as part of the production crew and for Say Yes to Education. Her goal when writing is to help shed light on the dimly lit areas of",
+        more: "our Community.",
+        image: data.katherineHills.childImageSharp.fluid
+    }, {
+        name: "Glory Thomas",
+        information: "Glory is the mother of three and a grandmother of three. She has been self-employed and in business for more than 20 years. She is an accomplished published author and recently published a book titled “My Big Little Book of Spiritual Experiences.” She now owns and operates",
+        more: "a family day care. In her spare time, she enjoys giving helpful business tips to new business owners. Glory also enjoys sewing. She does some alterations and makes custom-made bereavement pillows. She considers herself a skilled professional because she has such diverse experiences in many different areas. Finally she was also a radio personality of Star time gospel hour on 1540 radio located in East Syracuse.",
+        image: data.gloryThomas.childImageSharp.fluid
+    }, {
+        name: "Miguel Balbuena",
+        information: "Miguel moved to Syracuse in 1990 and to the South Side in 2006. He graduated from the Maxwell School of Citizenship and Public Affairs with master’s degrees in public administration and economics in 1992 and 1993, respectively. He sees as his mission to give back to",
+        more: "the community by empowering South Side residents and increasing their consciousness, especially in the areas of the environment and public health. After writing fiction in the seventh grade, Miguel’s first foray in journalism came two years later as publisher and editor-in-chief of a high school newspaper. He reassumed his love affair with journalism in his freshman year in college at the Pontifical Catholic University as member of the editorial board of a magazine. He has also published an economics essay in the journal of a central bank of reserve.",
+        image: data.miguelBalbuena.childImageSharp.fluid
+    }, {
+        name: "Jeremiah Howell",
+        information: "A long time resident of the area, Jeremiah is currently working as an environmental scientist in Syracuse. Jeremiah is a graduate of S.U.N.Y. College of Environmental Science and Forestry in Syracuse with a degree in Environmental Policy and",
+        more: "Management. An avid photographer, Jeremiah hopes to expand his ability behind the lens and contribute to community awareness through involvement with The Stand.",
+        image: data.jeremiahHowell.childImageSharp.fluid
+    }];
     return (
         <Layout>
             <h1>This is the about staff page</h1>
@@ -308,16 +336,6 @@ export default () => {
                                         image={s.image}
                                     />
                                 ))}
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.brendaMuhammad.childImageSharp.fluid}
-                                        alt="Brenda Billins Muhammad Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Brenda Billins Muhammad</span></p>
-                                    <p>Brenda is a consummate community volunteer seeking to serve the community as a true community conduit. She is dedicated not only to our community, but to our country as well. She has earned two President’s Volunteer Service Awards and a Certificate of<span id="dots7">...</span><span id="more7"> National Service. Brenda is currently serving a second term of National Service as an AmeriCorps VISTA (Volunteers in Service to America) with Syracuse Habitat for Humanity. Brenda is a graduate of Onondaga Community College and SUNY Institute of Technology. Brenda has excellent professional and educational experience in the areas of volunteer management, community organizing, non-profit management, disaster preparedness, business administration, homeownership education, foreclosure intervention and default counseling. She has recently acquired certificates from the Citizen’s Academy, NeighborWorks America Training Institute, FEMA and the Black History Preservation Project. Her plan of action is to attend town hall meetings, community events, workshops and share reports of the knowledge and resources that she secures with our readers. Brenda’s knowledge of our community and her varied experience will be a welcomed addition to The Stand.</span></p><button onclick="myFunction7()" id="myBtn7" class="mb-3">Read more</button>
-                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
