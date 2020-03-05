@@ -126,9 +126,27 @@ export default () => {
         image: data.ashleyKang.childImageSharp.fluid
     }];
 
-    const boardOfDirectors = [
-
-    ];
+    const boardOfDirectors = [{
+        name: "Charles Pierce-El",
+        information: "Charles was born and raised in Syracuse. He currently is the President of the South Side Community Coalition and is a retired employee from Chrysler. He is also the president/chairperson of the South Side Homeowner Association, chairperson of Saving Our Society",
+        more: "and a member of a couples of more organizations in an around the city of Syracuse. Besides this, he enjoys bowling, swimming, chess, jogging, cooking and reading. He sees The Stand as a great opportunity for the youth of Syracuse’s South Side and the community as a whole. He hopes many will get involved in the project. The Stand can only go as far as we take it. In the future, he would like The Stand to be run by the community. He believes this is a wonderful opportunity to the community. It’s a great jewel for our community; it represents all sectors of the city of Syracuse. Everyone can get something out of it. We include everyone.",
+        image: data.charlesPierce.childImageSharp.fluid
+    }, {
+        name: "Shanteashia Harris-El",
+        information: "Shanteashia is a graduate of Henninger High School and holds two nursing degrees: a bachelors of science from the University of Rochester and a masters of science from Upstate Medical University. She currently works as a nurse practitioner. She has volunteered her time",
+        more: "at Moorish Science Temple of America and in the past, with the Big Brother Big Sister program. She loves traveling and religion. She would like to see articles of religious, political, cultural, food (recipes) and health content featured in The Stand.",
+        image: data.shanteashiaHarris.childImageSharp.fluid
+    }, {
+        name: "Reginald A. Seigler",                                
+        information: "Reginald volunteers as the coordinator of Jubilee Homes Inc. Southwest Showcase Sundays by acting as a strong promoter to these community events held at the Spirit of Jubilee Park in the summer. He is an active member in the Tucker Missionary Baptist Church",
+        more: ", contributes to The Post-Standard as a Newschaser and also serves as the bandleader for Soft Spoken Band. He is helping to launch an entertainment column, A Friendly Five, in The Stand that highlights the music and history of the local music scene. He also hopes to see The Stand become involved with South Side schools and be an outlet for the community to voice their concerns. In his free time, he enjoys recording and mixing audio, videography, photography and writing.",
+        image: data.reginaldSeigler.childImageSharp.fluid
+    }, {
+        name: "Dale Harp",
+        information: "Dale joined The Stand as a board member this past month but has been connected with the publication since 2013. He was first featured in The Stand’s pages for being a local, published author of “The Day My Dawgs Ran,” a book he wrote while incarcerated",
+        More: ". He wanted to share his personal stories about going down the wrong path as a way to encourage youth to make better choices. He next participated in The Stand’s recent summer long storytelling series From Where We Stand. Now he is eager to be further involved as a board member. Harp is also a volunteer at the Mary Nelson Youth Center, Faith Hope Community Center and member of Citizen Action of NY.",
+        image: data.daleHarp.childImageSharp.fluid
+    }];
 
     const correspondents = [
 
@@ -220,16 +238,6 @@ export default () => {
                                         image={s.image}
                                     />
                                 ))}
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.charlesPierce.childImageSharp.fluid}
-                                        alt="Charles Pierce-El Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Charles Pierce-El</span></p>
-                                    <p>Charles was born and raised in Syracuse. He currently is the President of the South Side Community Coalition and is a retired employee from Chrysler. He is also the president/chairperson of the South Side Homeowner Association, chairperson of Saving Our Society<span id="dots3">...</span><span id="more3"> and a member of a couples of more organizations in an around the city of Syracuse. Besides this, he enjoys bowling, swimming, chess, jogging, cooking and reading. He sees The Stand as a great opportunity for the youth of Syracuse’s South Side and the community as a whole. He hopes many will get involved in the project. “The Stand can only go as far as we take it.” In the future, he would like The Stand to be run by the community. He believes this is a wonderful opportunity to the community. “It’s a great jewel for our community; it represents all sectors of the city of Syracuse. Everyone can get something out of it. We include everyone.”</span></p><button onclick="myFunction3()" id="myBtn3" class="mb-3">Read more</button>
-                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
