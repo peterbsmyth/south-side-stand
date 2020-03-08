@@ -1,59 +1,16 @@
 import React from "react"
-import Layout from "../components/layout"
+import Header from '../components/header'
+import Nav from '../components/nav'
+import Layout from '../components/layout'
+import Footer from '../components/footer'
+
 export default () => (
   <Layout>
-    <h1>This is the opportunities page.</h1>
 
-    <head>
+        <div class="container">
 
+          <Header />
 
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-      <title>Submit Opportunites</title>
-
-
-      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-
-      <link rel="stylesheet" href="css/general.css" type="text/css" />
-      <link rel="stylesheet" href="css/submitopportunities.css" text="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One|Oswald|Roboto:700&display=swap" rel="stylesheet" />
-
-    </head>
-
-    <body>
-
-      <div class="container">
-
-        <header class="row py-4">
-          <div class="col-3">
-            <img src="images/header_footer/the-stand-logo-full-blue.png" alt="the stand logo" width="200" />
-          </div>
-
-          <div class="col-6">
-          </div>
-
-          <div class="col-3">
-            <div class="row">
-              <div class="col px-0">
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" />
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon2"><img src="images/header_footer/iconfinder_search.png" alt="the search logo" width="24" /></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col text-right px-0">
-                <button type="button" class="btn btn-primary btn-md px-3 px-md-5">Donate</button>
-              </div>
-            </div>
-
-          </div>
-        </header>
 
         <div class="row">
           <div class="col px-0">
@@ -196,67 +153,10 @@ export default () => (
 
 
 
-              <footer class="row background-blue footer">
-
-                <div class="col-md-3 py-4 text-center">
-                  <img src="images/header_footer/the-stand-logo-white.png" alt="Stand Logo" width="150" />
-                </div>
-
-                <div class="col-md-6 py-4 text-center footer-text">
-
-                  <h4 class="pb-0">SUBSCRIBE</h4>
-                  <p>To recieve a weekly newsletter with popular stories and upcoming events:</p>
-
-                  <div class="input-group input-group-sm mb-3 container px-0">
-
-                    <input type="text" class="form-control" placeholder="Insert Email" aria-label="Insert Email" aria-describedby="basic-addon2" />
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon2">Submit</span>
-                    </div>
-
-                  </div>
-
-                  <ul class="list-inline">
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Stories</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">About</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Contact</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Getting Involved</a></li>
-                  </ul>
-
-                  <ul class="list-inline">
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Calendar</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Opportunities</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="https://www.flickr.com/photos/mysouthsidestand/" class="footer-link">Flickr</a></li>
-
-                    <li class="list-inline-item mx-2"><a target="new" href="INSERT LINK HERE" class="footer-link">Advertising</a></li>
-                  </ul>
-
-                  <p class="footer-text">&copy; 2019 The South Side Stand. All rights reserved.</p>
-
-                </div>
-
-
-                <div class="col-md-3 py-4 text-center">
-
-                  <a target="new" href="https://www.facebook.com/TheStandNewspaper/" ><img src="images/header_footer/iconfinder_facebook.png" alt="Facebook Logo" width="36" class="mx-1" /></a>
-
-                  <a target="new" href="http://twitter.com/mysouthside" ><img src="images/header_footer/iconfinder_twitter.png" alt="Twitter Logo" width="36" class="mx-1" /></a>
-
-                  <a target="new" href="INSERT STAND INSTAGRAM LINK" ><img src="images/header_footer/iconfinder_instagram.png" alt="Instagram Logo" width="36" class="mx-1" /></a>
-                </div>
-
-              </footer>
+              <Footer />
             </div>
           </div>
         </div>
       </div>
-    </body>
   </Layout>
 )
