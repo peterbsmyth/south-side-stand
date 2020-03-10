@@ -181,8 +181,6 @@ export default () => {
     }];
     return (
         <Layout>
-            <h1>This is the about staff page</h1>
-
             <div class="container">
 
                 <Header />
