@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import StaffCard from '../components/staffcard'
-
+import './aboutstaff.css'
 
 export default () => {
     const data = useStaticQuery(graphql`
@@ -214,35 +214,22 @@ export default () => {
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                {staff.map(s => (
-                                    <StaffCard
-                                        key={s.name}
-                                        name={s.name}
-                                        position={s.position}
-                                        information={s.information}
-                                        more={s.more}
-                                        image={s.image}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.ashleyKang.childImageSharp.fluid}
-                                        alt="Ashley Kang Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Ashley Kang</span><br /><span class="position">Director</span></p>
-                                    <p>Ashley first arrived in Syracuse in 2000 to study journalism at the S.I. Newhouse School of Public Communications. While at the university, she wrote for several student-run publications and served<span id="dots2">...</span><span id="more2"> as editor of the university’s only magazine devoted to diversity, 360 Degrees. Upon graduation, she took a full-time position with The Citizen, the daily newspaper based in Auburn, NY. As the paper’s features editor, she worked not only with staff writers but community members to provide local coverage of Cayuga County.She took over as director of The Stand in May of 2009 and quickly began collecting sources and contacts in the community. She is the main point person for interested contributors and works to coordinate all content seen on the website and in print. She hopes to find many from the community who are interested in contributing to the project and is impressed with the number of community residents who have shown interest so far. She graduated from SU in 2004 with a magazine journalism degree and obtained a master’s degree in higher education from SU’s School of Education in 2011.</span></p><button onclick="myFunction2()" id="myBtn2" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid col-md-12">
+                        {staff.map(s => (
+                            <article
+                                className="staffcontent"
+                            >
+                                <StaffCard
+                                    key={s.name}
+                                    name={s.name}
+                                    position={s.position}
+                                    information={s.information}
+                                    more={s.more}
+                                    image={s.image}
+                                />
+                            </article>
+
+                        ))}
                     </div>
 
                     <div class="row subh my-4">
@@ -251,68 +238,22 @@ export default () => {
                         </div>
                     </div>
 
-                    <div class="row mb-5">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                {boardOfDirectors.map(s => (
-                                    <StaffCard
-                                        key={s.name}
-                                        name={s.name}
-                                        position={s.position}
-                                        information={s.information}
-                                        more={s.more}
-                                        image={s.image}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.shanteashiaHarris.childImageSharp.fluid}
-                                        alt="Shanteashia Harris-El Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Shanteashia Harris-El</span></p>
-                                    <p>Shanteashia is a graduate of Henninger High School and holds two nursing degrees: a bachelors of science from the University of Rochester and a masters of science from Upstate Medical University. She currently works as a nurse practitioner. She has volunteered her time<span id="dots4">...</span><span id="more4"> at Moorish Science Temple of America and in the past, with the Big Brother Big Sister program. She loves traveling and religion. She would like to see articles of religious, political, cultural, food (recipes) and health content featured in The Stand.</span></p><button onclick="myFunction4()" id="myBtn4" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="grid col-md-12">
+                        {boardOfDirectors.map(s => (
+                            <article
+                                className="staffcontent"
+                            >
+                                <StaffCard
+                                    key={s.name}
+                                    name={s.name}
+                                    position={s.position}
+                                    information={s.information}
+                                    more={s.more}
+                                    image={s.image}
+                                />
+                            </article>
 
-                    <div class="row mb-5">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.reginaldSeigler.childImageSharp.fluid}
-                                        alt="Reginald A. Seigler Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Reginald A. Seigler</span></p>
-                                    <p>Reginald volunteers as the coordinator of Jubilee Homes Inc. Southwest Showcase Sundays by acting as a strong promoter to these community events held at the Spirit of Jubilee Park in the summer. He is an active member in the Tucker Missionary Baptist Church<span id="dots5">...</span><span id="more5">, contributes to The Post-Standard as a Newschaser and also serves as the bandleader for Soft Spoken Band. He is helping to launch an entertainment column, A Friendly Five, in The Stand that highlights the music and history of the local music scene. He also hopes to see The Stand become involved with South Side schools and be an outlet for the community to voice their concerns. In his free time, he enjoys recording and mixing audio, videography, photography and writing.</span></p><button onclick="myFunction5()" id="myBtn5" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.daleHarp.childImageSharp.fluid}
-                                        alt="Dale Harp Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Dale Harp</span></p>
-                                    <p>Dale joined The Stand as a board member this past month but has been connected with the publication since 2013. He was first featured in The Stand’s pages for being a local, published author of “The Day My Dawgs Ran,” a book he wrote while incarcerated<span id="dots6">...</span><span id="more6">. He wanted to share his personal stories about going down the wrong path as a way to encourage youth to make better choices. He next participated in The Stand’s recent summer long storytelling series From Where We Stand. Now he is eager to be further involved as a board member. Harp is also a volunteer at the Mary Nelson Youth Center, Faith Hope Community Center and member of Citizen Action of NY.</span></p><button onclick="myFunction6()" id="myBtn6" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
 
                     <div class="row subh my-4">
@@ -320,103 +261,22 @@ export default () => {
                             <h3>Community Correspondents</h3>
                         </div>
                     </div>
+                    <div class="grid col-md-12">
+                        {correspondents.map(s => (
+                            <article
+                                className="staffcontent"
+                            >
+                                <StaffCard
+                                    key={s.name}
+                                    name={s.name}
+                                    position={s.position}
+                                    information={s.information}
+                                    more={s.more}
+                                    image={s.image}
+                                />
+                            </article>
 
-                    <div class="row mb-5">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                {correspondents.map(s => (
-                                    <StaffCard
-                                        key={s.name}
-                                        name={s.name}
-                                        position={s.position}
-                                        information={s.information}
-                                        more={s.more}
-                                        image={s.image}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.keithMuhammad.childImageSharp.fluid}
-                                        alt="Dale Harp Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Keith Muhammad</span></p>
-                                    <p>Keith is a servant leader who has worked in the public and non-profit sectors for more than 25 years. He is moved by the pain and suffering of people and is committed to bringing about social change and equitable participation of the disenfranchised<span id="dots8">...</span><span id="more8">. Keith is from a family of activists. His father, Laymon Herring, was the self-educated publisher of the Syracuse Banner and Syracuse Crusader newspapers. He desires to walk in his father’s shoes by writing articles that speak truth to power, that address the needs of the people, that are thought provoking and entertaining. He became involved with the South Side Newspaper Project to improve his writing and to contribute. He has written a few small articles. His work has appeared in The Syracuse Banner, Health Care Cost and The Final Call.</span></p><button onclick="myFunction8()" id="myBtn8" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-5">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.katherineHills.childImageSharp.fluid}
-                                        alt="Katherine Hills Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Katherine Hills</span></p>
-                                    <p>Katherine is a graduate of St. John Fisher College with a degree in Communication/Journalism. She currently works for News Channel 9, as part of the production crew and for Say Yes to Education. Her goal when writing is to help shed light on the dimly lit areas of<span id="dots9">...</span><span id="more9"> our Community.</span></p><button onclick="myFunction9()" id="myBtn9" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.gloryThomas.childImageSharp.fluid}
-                                        alt="Glory Thomas Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 stf-text mt-3">
-                                    <p><span class="name">Glory Thomas</span></p>
-                                    <p>Glory is the mother of three and a grandmother of three. She has been self-employed and in business for more than 20 years. She is an accomplished published author and recently published a book titled “My Big Little Book of Spiritual Experiences.” She now owns and operates<span id="dots10">...</span><span id="more10"> a family day care. In her spare time, she enjoys giving helpful business tips to new business owners. Glory also enjoys sewing. She does some alterations and makes custom-made bereavement pillows. She considers herself a skilled professional because she has such diverse experiences in many different areas. Finally she was also a radio personality of Star time gospel hour on 1540 radio located in East Syracuse.</span></p><button onclick="myFunction10()" id="myBtn10" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-5">
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.miguelBalbuena.childImageSharp.fluid}
-                                        alt="Miguel Balbuena Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 mt-3">
-                                    <p><span class="name">Miguel Balbuena</span></p>
-                                    <p>Miguel moved to Syracuse in 1990 and to the South Side in 2006. He graduated from the Maxwell School of Citizenship and Public Affairs with master’s degrees in public administration and economics in 1992 and 1993, respectively. He sees as his mission to give back to<span id="dots11">...</span><span id="more11"> the community by empowering South Side residents and increasing their consciousness, especially in the areas of the environment and public health. After writing fiction in the seventh grade, Miguel’s first foray in journalism came two years later as publisher and editor-in-chief of a high school newspaper. He reassumed his love affair with journalism in his freshman year in college at the Pontifical Catholic University as member of the editorial board of a magazine. He has also published an economics essay in the journal of a central bank of reserve.</span></p><button onclick="myFunction11()" id="myBtn11" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row staffcontent">
-                                <div class="col-md-3">
-                                    <Img
-                                        fluid={data.jeremiahHowell.childImageSharp.fluid}
-                                        alt="Jeremiah Howell Image"
-                                        className="img-fluid simg mb-3 mt-3"
-                                    />
-                                </div>
-                                <div class="col-md-9 mt-3">
-                                    <p><span class="name">Jeremiah Howell</span></p>
-                                    <p>A long time resident of the area, Jeremiah is currently working as an environmental scientist in Syracuse. Jeremiah is a graduate of S.U.N.Y. College of Environmental Science and Forestry in Syracuse with a degree in Environmental Policy and<span id="dots12">...</span><span id="more12"> Management. An avid photographer, Jeremiah hopes to expand his ability behind the lens and contribute to community awareness through involvement with The Stand.</span></p><button onclick="myFunction12()" id="myBtn12" class="mb-3">Read more</button>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
 

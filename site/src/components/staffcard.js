@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
+import './aboutstaff.css'
 
 class StaffCard extends React.Component {
     render() {
@@ -20,8 +21,8 @@ class StaffCard extends React.Component {
                     <button onclick="myFunction1()" id="myBtn1" class="mb-3 button">Read more</button>
                 </div>
             </>
-                    )
-                }
-            }
-            
+        )
+    }
+}
+
 export default StaffCard;
